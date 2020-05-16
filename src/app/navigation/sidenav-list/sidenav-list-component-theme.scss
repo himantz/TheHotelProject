@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+
+@mixin sidenav-list-component-theme($theahotel){
+
+    $primary: map-get($theahotel, primary);
+    $accent: map-get($theahotel, accent);
+
+    .mat-list-option:hover, 
+    .mat-list-option:focus, 
+    .mat-nav-list .mat-list-item:hover, 
+    .mat-nav-list .mat-list-item:focus, 
+    .mat-action-list .mat-list-item:hover, 
+    .mat-action-list .mat-list-item:focus {
+        background-color: mat-color($theahotel-primary, 100);
+        color: mat-color($theahotel-primary, 100);
+    }
+
+}
